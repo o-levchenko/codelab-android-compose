@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 The Android Open Source Project
+ * Copyright 2023 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package com.codelab.basiclayouts.ui.theme
+package com.google.samples.apps.sunflower.theme
 
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Shapes
-import androidx.compose.ui.unit.dp
+import androidx.compose.material.MaterialTheme
+import androidx.compose.runtime.Composable
 
-val shapes = Shapes(
-    small = RoundedCornerShape(4.dp),
-    medium = RoundedCornerShape(12.dp)
-)
+@Composable
+fun SunflowerTheme(
+    content: @Composable () -> Unit
+) {
+    MaterialTheme(content = content)
+}
